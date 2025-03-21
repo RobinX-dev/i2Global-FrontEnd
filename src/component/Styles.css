@@ -1,0 +1,482 @@
+/* General styles */
+.home-container {
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Notes container */
+.notes-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Note Window Styles */
+.note-window {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.note-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.note-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.note-body textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  resize: none; /* Disable resizing */
+  background-color: #f9f9f9;
+}
+
+.note-footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+}
+
+/* Notes icon */
+.notes-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #2575fc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.notes-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-window {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.popup-header .close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+.popup-body {
+  margin-bottom: 20px;
+}
+
+.popup-body input,
+.popup-body textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.popup-body textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.popup-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup-buttons button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.popup-buttons button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+/* Fade-in animation for the card */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects for inputs */
+input:hover {
+  border-color: #2575fc !important;
+}
+
+/* Hover and active effects for the button */
+button:hover {
+  background: #03469e !important;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Animation for the sign-up link */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1a5bbf !important;
+}
+
+/* General styles */
+.home-container {
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  background-color: #e4e4e4c2;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Notes container */
+.notes-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Note Window Styles */
+.note-window {
+  color:white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  width: 250px;
+  background-color: #066eb4de;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.note-window:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.note-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.note-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.note-body textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 14px;
+  resize: none; /* Disable resizing */
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.note-body textarea:hover {
+  border-color: #2575fc;
+}
+
+.note-footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Notes icon */
+.notes-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #2575fc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.notes-icon:hover {
+  transform: scale(1.1);
+  background-color: #1a5bbf;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-window {
+  background-color: #20896c;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.popup-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.popup-header .close-icon {
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.popup-header .close-icon:hover {
+  color: #2575fc;
+}
+
+.popup-body {
+  margin-bottom: 20px;
+}
+
+.popup-body input,
+.popup-body textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.popup-body input:hover,
+.popup-body textarea:hover {
+  border-color: #2575fc;
+}
+
+.popup-body textarea {
+  height: 150px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.popup-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.popup-buttons button:first-child {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.popup-buttons button:first-child:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.popup-buttons button:last-child {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.popup-buttons button:last-child:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2575fc;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav button:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
