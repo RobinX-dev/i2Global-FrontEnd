@@ -1,7 +1,7 @@
 # i2Global-FrontEnd
 
-# Step 1 : install Dependencies using <code>npm install</code>
-# Step 2 :Run Project using using <code>npm start</code>
+# Step 1 : <h3>install Dependencies using : <code>npm install</code></h3>
+# Step 2 : <h3>Run Project using using <code>npm start</code></h3>
 
 ## Screenshots
 
